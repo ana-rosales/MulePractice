@@ -1,12 +1,6 @@
 # MulePractice
 ## dbactions
-### Flujos
-#### dbinsert-flw
-Inserta una prenda.
-#### dbqueryone-flw
-Consulta una prenda con su id.
-#### dbquerymany-flw
-Consulta todas las prendas que tengan el tipo indicado en ```attributes.queryParams```
+```dbactions``` es una app Mule con tres flujos: [dbinsert-flw](#dbinsert-flw), [dbqueryone-flw](#dbqueryone-flw) y [dbquerymany-flw](#dbquerymany-flw).
 ### Esquema
 Se utiliza el siguiente esquema:
 ```sql
@@ -54,3 +48,14 @@ INSERT INTO prueba.prenda (id_tipo,nombre) VALUES
 	 (2,'Jeans Cortos'),
 	 (4,'Chaqueta Esponjosa');
 ```
+
+### Flujos
+#### dbinsert-flw
+1. Recibe una solicitud HTTP POST como la siguiente: 
+<img width="436" height="253" alt="insert-eg" src="https://github.com/user-attachments/assets/382d4da6-5323-4cc6-80f9-0e3fbd4fa554" />
+2. Inserta la prenda indicada.
+#### dbqueryone-flw
+1. Cada 5 segundos revisa si hay una prenda nueva registrada.
+2. Si la hay, muestra en consola: el ```id```, el ```nombre``` y el ```tipo``` de la prenda.
+#### dbquerymany-flw
+Consulta todas las prendas que tengan el tipo indicado en ```attributes.queryParams```
