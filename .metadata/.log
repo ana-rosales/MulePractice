@@ -748,3 +748,6 @@ C:\AnypointStudio\configuration\org.eclipse.osgi\423\data\.runtimes\tooling-pwlz
 
 !ENTRY org.mule.tooling.runtime 2 0 2025-07-11 20:14:26.008
 !MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 7056]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-07-11 20:58:32.200
+!MESSAGE  *** 11285 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
