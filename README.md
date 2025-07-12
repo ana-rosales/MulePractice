@@ -1,7 +1,7 @@
 # MulePractice
-## dbactions
+## dbactions💾
 ```dbactions``` es una app Mule con tres flujos: [dbinsert-flw](#dbinsert-flw), [dbqueryone-flw](#dbqueryone-flw) y [dbquerymany-flw](#dbquerymany-flw).
-### Flujos
+### Flujos🔃
 #### dbinsert-flw
 1. Recibe una solicitud HTTP POST como la siguiente:
 
@@ -18,8 +18,9 @@ Prenda ingresada: [{id=14, prenda=Short Diamantado, tipo=Short}]
 1. Recibe una solicitud HTTP GET con ```attributes.queryParams.tipos```.
 2. Trae de la BD todas las prendas que tengan el tipo indicado en los parámetros.
 3. Los devuelve en la respuesta HTTP.
+
 ![Ejemplo insert.](https://github.com/ana-rosales/MulePractice/blob/main/readme/query-eg.png)
-### Esquema
+### Esquema🔨
 Se utiliza el siguiente esquema:
 ```sql
 -- prueba.prenda definition
@@ -41,7 +42,7 @@ CREATE TABLE `tipo` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
-### Datos
+### Datos🛠️
 Y estos son los datos ya ingresados:
 ```sql
 INSERT INTO prueba.tipo (nombre) VALUES
