@@ -1,0 +1,8 @@
+http.listener.host=0.0.0.0
+http.listener.port=8081
+
+datasource.host=localhost
+datasource.port=3306
+datasource.user=root
+datasource.password=1234
+datasource.db=prueba

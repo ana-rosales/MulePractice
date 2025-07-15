@@ -40,9 +40,9 @@
 		</http:listener>
 		<db:select config-ref="db-cfg">
 			<db:sql>
-				select p.id, p.nombre prenda, t.nombre tipo
-				from prenda p left join tipo t on (p.id_tipo = t.id)
-				where t.id = :tipos_in
+				SELECT p.id, p.nombre AS prenda, t.nombre AS tipo
+				FROM prenda p LEFT JOIN tipo t ON (p.id_tipo = t.id)
+				WHERE t.id = :tipos_in
 			</db:sql>
 			<db:input-parameters>
 				#[
@@ -72,16 +72,17 @@
 		</ee:transform>
 	</flow>
 	<flow name="dbqueryone-flw">
-		<db:listener table="prenda" config-ref="db-cfg" watermarkColumn="id" idColumn="id">
+		<db:listener table="prenda" watermarkColumn="id" idColumn="id" config-ref="db-cfg">
 			<scheduling-strategy >
 				<fixed-frequency timeUnit="SECONDS" frequency="5"/>
 			</scheduling-strategy>
 		</db:listener>
 		<db:select config-ref="db-cfg">
 			<db:sql>
-				select p.id, p.nombre prenda, t.nombre tipo 
-				from prenda p left join tipo t on (p.id_tipo = t.id)
-				where p.id = :id_in
+				SELECT p.id, p.nombre AS prenda, t.nombre AS tipo
+				FROM prenda p
+				LEFT JOIN tipo t ON p.id_tipo = t.id
+				WHERE p.id = :id_in
 			</db:sql>
 			<db:input-parameters>
 				#[
