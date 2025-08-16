@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:file="http://www.mulesoft.org/schema/mule/file"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="cfg-http" doc:name="HTTP Listener config" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	
+	<file:config name="cfg-file" doc:name="File Config" doc:id="0dbc0bc8-55d4-4a14-a4aa-5f5aa0f85732" />
+	<flow name="flw-listfiles">
+		<http:listener doc:name="Listener" doc:id="5276b030-9808-4e11-9c29-8b5f2a212b78" config-ref="cfg-http" path="list-files">
+		</http:listener>
+		<file:list doc:name="List" doc:id="8086254c-ad27-4ca4-bbe0-8bc7e2b0d6f6" config-ref="cfg-file" directoryPath="#[attributes.queryParams.path]"/>
+		<choice doc:name="Choice" doc:id="e43b1205-4426-4b02-8ab3-97fb4ded09c5" >
+			<when expression="#[payload != []]">
+				<ee:transform doc:name="Transform Message" doc:id="490569f1-2844-437b-a1f0-4fa9b3f7b1be">
+					<ee:message>
+						<ee:set-payload><![CDATA[%dw 2.0
+output application/xml
+---
+{
+	files: {
+		(payload map (item, index) -> {
+			file: {
+				name: item.attributes.fileName,
+				path: item.attributes.path
+			}
+		})
+	}
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</when>
+			<otherwise>
+				<ee:transform doc:name="Transform Message" doc:id="4823a7be-f2b8-4400-9159-1b6621ca4cbe" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+{
+	error: {
+		code: 404,
+		message: "No se encontraron archivos en la ruta especificada"
+	}
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</otherwise>
+		</choice>
+		
+	</flow>
+</mule>

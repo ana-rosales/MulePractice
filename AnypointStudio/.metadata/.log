@@ -5129,3 +5129,1006 @@ C:\AnypointStudio\configuration\org.eclipse.osgi\423\data\.runtimes\tooling-55ma
 
 !ENTRY org.mule.tooling.ui.contribution.munit 1 1 2025-08-01 18:56:30.065
 !MESSAGE Deleting MUnit temporary folder in C:\Users\SAIF01\AppData\Local\Temp\munit-temp-dir
+!SESSION 2025-08-14 16:06:35.322 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.12
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2025-08-14 16:07:12.571
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-14 16:07:12.571
+!MESSAGE Cannot bind to an undefined command: plug-in='org.mule.alsp', id='org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand'
+
+!ENTRY org.mule.tooling.ui.contribution.munit 1 1 2025-08-14 16:07:23.509
+!MESSAGE Creating MUnit temporary folder in C:\Users\SAIF01\AppData\Local\Temp\munit-temp-dir
+
+!ENTRY org.mule.tooling.core 1 0 2025-08-14 16:07:26.867
+!MESSAGE Mule Version 4.9.0, was mapped to Tooling Version 4.9.0
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-14 16:08:04.348
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SAIF01'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.mule.tooling.core 1 0 2025-08-14 16:08:38.240
+!MESSAGE Checking updates in Exchange for: [org.mule.connectors:mule-sockets-connector, org.mule.connectors:mule-http-connector, org.mule.connectors:mule-db-connector]
+
+!ENTRY org.mule.tooling.core 1 0 2025-08-14 16:08:42.284
+!MESSAGE Check finished: all Mule Modules are up to date
+
+!ENTRY org.mule.tooling.core 1 0 2025-08-14 16:09:39.915
+!MESSAGE Started tooling v[4.9.0] with timeout [90s] at path:
+C:\AnypointStudio\configuration\org.eclipse.osgi\423\data\.runtimes\tooling-55maahst
+
+!ENTRY org.mule.tooling.core 1 0 2025-08-14 16:09:45.581
+!MESSAGE Tooling workspace is C:\Users\SAIF01\Documents\repositorios\Entrega_Eli\AnypointStudio\.tooling-apps-cache
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-14 16:10:08.374
+!MESSAGE  *** 22190 EmbeddedMavenRunner [configuration=DefaultMavenRunnerConfiguration [externalInstallation=false, mavenInstallationHome=C:\Program Files\Maven\apache-maven-3.9.10, mavenOpts=]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-14 16:14:44.505
+!MESSAGE  *** 7345 EmbeddedMavenRunner [configuration=DefaultMavenRunnerConfiguration [externalInstallation=false, mavenInstallationHome=C:\Program Files\Maven\apache-maven-3.9.10, mavenOpts=]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-14 16:16:28.220
+!MESSAGE  *** 4459 EmbeddedMavenRunner [configuration=DefaultMavenRunnerConfiguration [externalInstallation=false, mavenInstallationHome=C:\Program Files\Maven\apache-maven-3.9.10, mavenOpts=]]
+
+!ENTRY org.mule.tooling.core 4 0 2025-08-14 16:18:07.336
+!MESSAGE There was a problem while sending events to Amplitude
+!STACK 0
+com.mulesoft.telemetry.SendBundleException: HTTP POST failed
+	at com.mulesoft.telemetry.TelemetryHttpClient.send(TelemetryHttpClient.java:109)
+	at com.mulesoft.telemetry.DefaultTelemetryService.send(DefaultTelemetryService.java:234)
+	at com.mulesoft.telemetry.DefaultTelemetryService.sendEvents(DefaultTelemetryService.java:226)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.http.NoHttpResponseException: studio-metrics-report.cloudhub.io:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.mulesoft.telemetry.TelemetryHttpClient.send(TelemetryHttpClient.java:107)
+	... 8 more
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-14 16:24:39.436
+!MESSAGE  *** 32116 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.eclipse.jface 2 0 2025-08-14 16:25:54.668
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-08-14 16:25:54.668
+!MESSAGE A conflict occurred for CTRL+SHIFT+K:
+Binding(CTRL+SHIFT+K,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findPrevious,Find Previous,
+		Find previous item,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.findPrevious"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+K,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findPrevious,Find Previous,
+		Find previous item,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.findPrevious"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.xtext.ui.embeddedTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-08-14 16:25:54.668
+!MESSAGE A conflict occurred for CTRL+K:
+Binding(CTRL+K,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findNext,Find Next,
+		Find next item,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.findNext"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+K,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findNext,Find Next,
+		Find next item,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.findNext"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.xtext.ui.embeddedTextEditorScope,,,system)
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-14 16:31:27.531
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 4176]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-14 16:31:27.570
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 4176]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-14 16:31:27.801
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 4176]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-14 16:31:27.802
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 11908]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-14 16:31:27.811
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 11908]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-14 16:31:27.910
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 11908]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-14 16:31:48.033
+!MESSAGE  *** 16917 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.ui.contribution.munit 1 1 2025-08-14 18:08:59.522
+!MESSAGE Deleting MUnit temporary folder in C:\Users\SAIF01\AppData\Local\Temp\munit-temp-dir
+!SESSION 2025-08-15 14:08:18.320 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.12
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2025-08-15 14:08:25.420
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-15 14:08:25.420
+!MESSAGE Cannot bind to an undefined command: plug-in='org.mule.alsp', id='org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand'
+
+!ENTRY org.mule.tooling.ui.contribution.munit 1 1 2025-08-15 14:08:30.956
+!MESSAGE Creating MUnit temporary folder in C:\Users\SAIF01\AppData\Local\Temp\munit-temp-dir
+
+!ENTRY org.mule.tooling.core 1 0 2025-08-15 14:08:32.638
+!MESSAGE Mule Version 4.9.0, was mapped to Tooling Version 4.9.0
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-15 14:08:39.474
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SAIF01'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.mule.tooling.core 1 0 2025-08-15 14:09:01.828
+!MESSAGE Started tooling v[4.9.0] with timeout [90s] at path:
+C:\AnypointStudio\configuration\org.eclipse.osgi\423\data\.runtimes\tooling-55maahst
+
+!ENTRY org.mule.tooling.core 1 0 2025-08-15 14:09:37.611
+!MESSAGE Checking updates in Exchange for: [org.mule.connectors:mule-file-connector, org.mule.connectors:mule-sockets-connector, org.mule.connectors:mule-http-connector, org.mule.connectors:mule-db-connector]
+
+!ENTRY org.mule.tooling.core 1 0 2025-08-15 14:09:40.153
+!MESSAGE Check finished: there are updates for some Mule Modules
+
+!ENTRY org.mule.tooling.core 1 0 2025-08-15 14:10:17.140
+!MESSAGE Tooling workspace is C:\Users\SAIF01\Documents\repositorios\Entrega_Eli\AnypointStudio\.tooling-apps-cache
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 14:10:24.705
+!MESSAGE  *** 7117 EmbeddedMavenRunner [configuration=DefaultMavenRunnerConfiguration [externalInstallation=false, mavenInstallationHome=C:\Program Files\Maven\apache-maven-3.9.10, mavenOpts=]]
+
+!ENTRY org.eclipse.jface 2 0 2025-08-15 14:10:29.800
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-08-15 14:10:29.800
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.format"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.xtext.ui.embeddedTextEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.mule.tooling.ui.openFlow,Open Flow,
+		Search For Flows in the current workspace,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		WorkbenchHandlerServiceHandler("org.mule.tooling.ui.openFlow"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 14:10:47.961
+!MESSAGE  *** 11468 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 14:18:18.267
+!MESSAGE  *** 4959 EmbeddedMavenRunner [configuration=DefaultMavenRunnerConfiguration [externalInstallation=false, mavenInstallationHome=C:\Program Files\Maven\apache-maven-3.9.10, mavenOpts=]]
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:43:07.133
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 8080]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:43:07.153
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 8080]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 15:43:07.372
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 8080]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:43:07.374
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 9024]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:43:07.383
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 9024]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 15:43:07.501
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 9024]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 15:43:13.631
+!MESSAGE  *** 10993 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 15:43:24.728
+!MESSAGE  *** 10937 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:44:22.017
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 28604]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:44:22.034
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 28604]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 15:44:22.180
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 28604]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:44:22.180
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 17184]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:44:22.189
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 17184]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 15:44:22.301
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 17184]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 15:44:36.030
+!MESSAGE  *** 10364 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:45:38.740
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 20976]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:45:38.750
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 20976]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 15:45:38.906
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 20976]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:45:38.907
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 26688]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:45:38.915
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 26688]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 15:45:39.042
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 26688]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 15:45:46.108
+!MESSAGE  *** 9915 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 15:45:56.851
+!MESSAGE  *** 10592 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.core 4 0 2025-08-15 15:50:18.194
+!MESSAGE There was a problem while sending events to Amplitude
+!STACK 0
+com.mulesoft.telemetry.SendBundleException: HTTP POST failed
+	at com.mulesoft.telemetry.TelemetryHttpClient.send(TelemetryHttpClient.java:109)
+	at com.mulesoft.telemetry.DefaultTelemetryService.send(DefaultTelemetryService.java:234)
+	at com.mulesoft.telemetry.DefaultTelemetryService.sendEvents(DefaultTelemetryService.java:226)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.http.NoHttpResponseException: studio-metrics-report.cloudhub.io:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.mulesoft.telemetry.TelemetryHttpClient.send(TelemetryHttpClient.java:107)
+	... 8 more
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 15:53:43.856
+!MESSAGE  *** 1945 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2025-08-15 15:53:43.858
+!MESSAGE There was an error running build on project confile-004
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 15:54:03.373
+!MESSAGE  *** 1889 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2025-08-15 15:54:03.374
+!MESSAGE There was an error running build on project confile-004
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:54:07.469
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 26076]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:54:07.489
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 26076]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 15:54:07.684
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 26076]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:54:07.684
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 21204]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 15:54:07.692
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 21204]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 15:54:07.789
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 21204]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 15:56:08.766
+!MESSAGE  *** 9466 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2025-08-15 15:56:08.767
+!MESSAGE There was an error running build on project confile-004
+
+!ENTRY org.mule.tooling.core 4 0 2025-08-15 15:56:08.769
+!MESSAGE Unable to find result application jar file
+!STACK 0
+java.lang.RuntimeException
+	at org.mule.tooling.maven.ui.launch.MavenDeploymentStrategy.deployToEmbeddedInstance(MavenDeploymentStrategy.java:115)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.deployProjects(MuleRuntimeProcessLaunchDelegate.java:769)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.performLegacyDeployment(MuleRuntimeProcessLaunchDelegate.java:417)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.launch(MuleRuntimeProcessLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 15:57:10.004
+!MESSAGE  *** 9405 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2025-08-15 15:57:10.005
+!MESSAGE There was an error running build on project confile-004
+
+!ENTRY org.mule.tooling.core 4 0 2025-08-15 15:57:10.005
+!MESSAGE Unable to find result application jar file
+!STACK 0
+java.lang.RuntimeException
+	at org.mule.tooling.maven.ui.launch.MavenDeploymentStrategy.deployToEmbeddedInstance(MavenDeploymentStrategy.java:115)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.deployProjects(MuleRuntimeProcessLaunchDelegate.java:769)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.performLegacyDeployment(MuleRuntimeProcessLaunchDelegate.java:417)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.launch(MuleRuntimeProcessLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.mule.tooling.core 4 0 2025-08-15 15:58:01.554
+!MESSAGE There was a problem while creating and error marker...
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/confile-004/src/main/mule/confile-004.xml)[376]: java.lang.IllegalStateException
+	at org.eclipse.core.internal.resources.Marker.checkInfo(Marker.java:63)
+	at org.eclipse.core.internal.resources.Marker.setAttribute(Marker.java:260)
+	at org.mule.tooling.core.generator.errors.messageflow.XMLMuleError.createMarker(XMLMuleError.java:46)
+	at org.mule.tooling.core.builder.MuleValidationResult.reportInProblemsPane(MuleValidationResult.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.mule.tooling.core.builder.TransformerUtils.addErrorsForFlow(TransformerUtils.java:102)
+	at org.mule.tooling.core.builder.TransformerUtils.validateConfigFile(TransformerUtils.java:85)
+	at org.mule.tooling.core.builder.ValidationBuildVisitor$1.call(ValidationBuildVisitor.java:42)
+	at org.mule.tooling.core.builder.ValidationBuildVisitor$1.call(ValidationBuildVisitor.java:1)
+	at org.mule.tooling.utils.SilentRunner.run(SilentRunner.java:25)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithContext(StudioDesignContextRunner.java:200)
+	at org.mule.tooling.core.builder.ValidationBuildVisitor.validate(ValidationBuildVisitor.java:37)
+	at org.mule.tooling.core.builder.ValidationBuildVisitor.visitFile(ValidationBuildVisitor.java:31)
+	at org.mule.tooling.core.utils.MuleProjectResourceVisitor.visit(MuleProjectResourceVisitor.java:19)
+	at org.eclipse.core.internal.resources.Resource.lambda$1(Resource.java:154)
+	at org.eclipse.core.internal.resources.Resource.lambda$0(Resource.java:122)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:135)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:131)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:92)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:154)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:142)
+	at org.mule.tooling.core.builder.MuleBuilder$1.run(MuleBuilder.java:182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 376 2025-08-15 15:58:01.556
+!MESSAGE Marker id 988 not found.
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.core.internal.resources.Marker.checkInfo(Marker.java:63)
+	at org.eclipse.core.internal.resources.Marker.setAttribute(Marker.java:260)
+	at org.mule.tooling.core.generator.errors.messageflow.XMLMuleError.createMarker(XMLMuleError.java:46)
+	at org.mule.tooling.core.builder.MuleValidationResult.reportInProblemsPane(MuleValidationResult.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.mule.tooling.core.builder.TransformerUtils.addErrorsForFlow(TransformerUtils.java:102)
+	at org.mule.tooling.core.builder.TransformerUtils.validateConfigFile(TransformerUtils.java:85)
+	at org.mule.tooling.core.builder.ValidationBuildVisitor$1.call(ValidationBuildVisitor.java:42)
+	at org.mule.tooling.core.builder.ValidationBuildVisitor$1.call(ValidationBuildVisitor.java:1)
+	at org.mule.tooling.utils.SilentRunner.run(SilentRunner.java:25)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithContext(StudioDesignContextRunner.java:200)
+	at org.mule.tooling.core.builder.ValidationBuildVisitor.validate(ValidationBuildVisitor.java:37)
+	at org.mule.tooling.core.builder.ValidationBuildVisitor.visitFile(ValidationBuildVisitor.java:31)
+	at org.mule.tooling.core.utils.MuleProjectResourceVisitor.visit(MuleProjectResourceVisitor.java:19)
+	at org.eclipse.core.internal.resources.Resource.lambda$1(Resource.java:154)
+	at org.eclipse.core.internal.resources.Resource.lambda$0(Resource.java:122)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:90)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:135)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:131)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:92)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:154)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:142)
+	at org.mule.tooling.core.builder.MuleBuilder$1.run(MuleBuilder.java:182)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 15:58:08.672
+!MESSAGE  *** 2156 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2025-08-15 15:58:08.673
+!MESSAGE There was an error running build on project confile-004
+
+!ENTRY org.mule.tooling.core 4 0 2025-08-15 15:58:08.674
+!MESSAGE Unable to find result application jar file
+!STACK 0
+java.lang.RuntimeException
+	at org.mule.tooling.maven.ui.launch.MavenDeploymentStrategy.deployToEmbeddedInstance(MavenDeploymentStrategy.java:115)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.deployProjects(MuleRuntimeProcessLaunchDelegate.java:769)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.performLegacyDeployment(MuleRuntimeProcessLaunchDelegate.java:417)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.launch(MuleRuntimeProcessLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 15:59:06.348
+!MESSAGE  *** 9556 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 16:03:24.254
+!MESSAGE  *** 8812 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:28:47.267
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 26188]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:28:47.295
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 26188]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 16:28:47.475
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 26188]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:28:47.476
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 25636]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:28:47.484
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 25636]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 16:28:47.727
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 25636]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 16:28:52.087
+!MESSAGE  *** 9403 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 16:29:02.111
+!MESSAGE  *** 9899 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.core 4 0 2025-08-15 16:30:38.171
+!MESSAGE There was a problem while sending events to Amplitude
+!STACK 0
+com.mulesoft.telemetry.SendBundleException: HTTP POST failed
+	at com.mulesoft.telemetry.TelemetryHttpClient.send(TelemetryHttpClient.java:109)
+	at com.mulesoft.telemetry.DefaultTelemetryService.send(DefaultTelemetryService.java:234)
+	at com.mulesoft.telemetry.DefaultTelemetryService.sendEvents(DefaultTelemetryService.java:226)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1465)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1069)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.mulesoft.telemetry.TelemetryHttpClient.send(TelemetryHttpClient.java:107)
+	... 8 more
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:31:26.996
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 1588]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:31:27.017
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 1588]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 16:31:27.171
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 1588]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:31:27.172
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 22556]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:31:27.180
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 22556]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 16:31:27.292
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 22556]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 16:31:34.211
+!MESSAGE  *** 9060 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 16:31:44.202
+!MESSAGE  *** 9877 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:32:04.003
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 5380]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:32:04.022
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 5380]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 16:32:04.152
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 5380]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:32:04.153
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 10548]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:32:04.161
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 10548]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 16:32:04.272
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 10548]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 16:35:53.648
+!MESSAGE  *** 9413 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:49:15.934
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 11172]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:49:15.957
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 11172]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 16:49:16.201
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 11172]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:49:16.203
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 24572]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 16:49:16.210
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 24572]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 16:49:16.307
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 24572]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 16:49:22.175
+!MESSAGE  *** 9078 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2025-08-15 16:49:22.176
+!MESSAGE There was an error running build on project confile-004
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 16:49:31.580
+!MESSAGE  *** 9250 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2025-08-15 16:49:31.581
+!MESSAGE There was an error running build on project confile-004
+
+!ENTRY org.mule.tooling.core 4 0 2025-08-15 16:49:31.581
+!MESSAGE Unable to find result application jar file
+!STACK 0
+java.lang.RuntimeException
+	at org.mule.tooling.maven.ui.launch.MavenDeploymentStrategy.deployToEmbeddedInstance(MavenDeploymentStrategy.java:115)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.deployProjects(MuleRuntimeProcessLaunchDelegate.java:769)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.performLegacyDeployment(MuleRuntimeProcessLaunchDelegate.java:417)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.launch(MuleRuntimeProcessLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 16:50:52.159
+!MESSAGE  *** 8985 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2025-08-15 16:50:52.160
+!MESSAGE There was an error running build on project confile-004
+
+!ENTRY org.mule.tooling.core 4 0 2025-08-15 16:50:52.161
+!MESSAGE Unable to find result application jar file
+!STACK 0
+java.lang.RuntimeException
+	at org.mule.tooling.maven.ui.launch.MavenDeploymentStrategy.deployToEmbeddedInstance(MavenDeploymentStrategy.java:115)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.deployProjects(MuleRuntimeProcessLaunchDelegate.java:769)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.performLegacyDeployment(MuleRuntimeProcessLaunchDelegate.java:417)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.launch(MuleRuntimeProcessLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.mule.tooling.core 4 0 2025-08-15 16:50:58.301
+!MESSAGE There was a problem while sending events to Amplitude
+!STACK 0
+com.mulesoft.telemetry.SendBundleException: HTTP POST failed
+	at com.mulesoft.telemetry.TelemetryHttpClient.send(TelemetryHttpClient.java:109)
+	at com.mulesoft.telemetry.DefaultTelemetryService.send(DefaultTelemetryService.java:234)
+	at com.mulesoft.telemetry.DefaultTelemetryService.sendEvents(DefaultTelemetryService.java:226)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:484)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1465)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1069)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.mulesoft.telemetry.TelemetryHttpClient.send(TelemetryHttpClient.java:107)
+	... 8 more
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 16:51:15.591
+!MESSAGE  *** 8844 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2025-08-15 16:51:15.592
+!MESSAGE There was an error running build on project confile-004
+
+!ENTRY org.mule.tooling.core 4 0 2025-08-15 16:51:15.593
+!MESSAGE Unable to find result application jar file
+!STACK 0
+java.lang.RuntimeException
+	at org.mule.tooling.maven.ui.launch.MavenDeploymentStrategy.deployToEmbeddedInstance(MavenDeploymentStrategy.java:115)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.deployProjects(MuleRuntimeProcessLaunchDelegate.java:769)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.performLegacyDeployment(MuleRuntimeProcessLaunchDelegate.java:417)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.launch(MuleRuntimeProcessLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 16:52:34.641
+!MESSAGE  *** 9088 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2025-08-15 16:52:34.642
+!MESSAGE There was an error running build on project confile-004
+
+!ENTRY org.mule.tooling.core 4 0 2025-08-15 16:52:34.643
+!MESSAGE Unable to find result application jar file
+!STACK 0
+java.lang.RuntimeException
+	at org.mule.tooling.maven.ui.launch.MavenDeploymentStrategy.deployToEmbeddedInstance(MavenDeploymentStrategy.java:115)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.deployProjects(MuleRuntimeProcessLaunchDelegate.java:769)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.performLegacyDeployment(MuleRuntimeProcessLaunchDelegate.java:417)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.launch(MuleRuntimeProcessLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 16:54:08.968
+!MESSAGE  *** 9031 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven.ui 4 0 2025-08-15 16:54:08.970
+!MESSAGE There was an error running build on project confile-004
+
+!ENTRY org.mule.tooling.core 4 0 2025-08-15 16:54:08.970
+!MESSAGE Unable to find result application jar file
+!STACK 0
+java.lang.RuntimeException
+	at org.mule.tooling.maven.ui.launch.MavenDeploymentStrategy.deployToEmbeddedInstance(MavenDeploymentStrategy.java:115)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.deployProjects(MuleRuntimeProcessLaunchDelegate.java:769)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.performLegacyDeployment(MuleRuntimeProcessLaunchDelegate.java:417)
+	at org.mule.tooling.runtime.launch.MuleRuntimeProcessLaunchDelegate.launch(MuleRuntimeProcessLaunchDelegate.java:298)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 17:10:06.004
+!MESSAGE  *** 9910 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.eclipse.jface 2 0 2025-08-15 17:11:00.940
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-08-15 17:11:00.940
+!MESSAGE A conflict occurred for CTRL+SHIFT+K:
+Binding(CTRL+SHIFT+K,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findPrevious,Find Previous,
+		Find previous item,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.findPrevious"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+K,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findPrevious,Find Previous,
+		Find previous item,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.findPrevious"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.xtext.ui.embeddedTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-08-15 17:11:00.940
+!MESSAGE A conflict occurred for CTRL+K:
+Binding(CTRL+K,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findNext,Find Next,
+		Find next item,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.findNext"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+K,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findNext,Find Next,
+		Find next item,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.findNext"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.xtext.ui.embeddedTextEditorScope,,,system)
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:12:29.689
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 16020]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:12:29.710
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 16020]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 17:12:29.891
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 16020]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:12:29.891
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 27412]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:12:29.915
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 27412]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 17:12:30.006
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 27412]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 17:20:14.657
+!MESSAGE  *** 9547 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:21:08.594
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 12656]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:21:08.610
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 12656]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 17:21:08.744
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 12656]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:21:08.745
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 16924]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:21:08.754
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 16924]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 17:21:08.860
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 16924]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 17:21:21.733
+!MESSAGE  *** 9947 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 17:45:26.162
+!MESSAGE  *** 2350 EmbeddedMavenRunner [configuration=DefaultMavenRunnerConfiguration [externalInstallation=false, mavenInstallationHome=C:\Program Files\Maven\apache-maven-3.9.10, mavenOpts=]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 17:48:29.073
+!MESSAGE  *** 2215 EmbeddedMavenRunner [configuration=DefaultMavenRunnerConfiguration [externalInstallation=false, mavenInstallationHome=C:\Program Files\Maven\apache-maven-3.9.10, mavenOpts=]]
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:49:58.380
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 9948]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:49:58.392
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 9948]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 17:49:58.587
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 9948]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:49:58.588
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 21768]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:49:58.596
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 21768]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 17:49:58.702
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 21768]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 17:50:13.483
+!MESSAGE  *** 10658 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.eclipse.jface 2 0 2025-08-15 17:51:20.983
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-08-15 17:51:20.983
+!MESSAGE A conflict occurred for CTRL+F:
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findReplace,Find and Replace,
+		Find and replace text,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.findReplace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.mule.tooling.ui.dfl.contribution.commands.searchCommand,Find/Replace,
+		Find/Replace,
+		Category(org.mule.tooling.ui.commandcategory,org.mule.tooling.ui.commandcategory,Category for menu commands,true),
+		WorkbenchHandlerServiceHandler("org.mule.tooling.ui.dfl.contribution.commands.searchCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.mule.tooling.contexts.mulePropertiesEditor,,,system)
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.mule.tooling.commands.focusSearchCommand,Focus Search Command,
+		Focus Search in Palette,
+		Category(org.mule.tooling.ui.commandcategory,org.mule.tooling.ui.commandcategory,Category for menu commands,true),
+		WorkbenchHandlerServiceHandler("org.mule.tooling.commands.focusSearchCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.mule.tooling.contexts.mulePropertiesEditor,,,system)
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 17:52:52.262
+!MESSAGE  *** 2480 EmbeddedMavenRunner [configuration=DefaultMavenRunnerConfiguration [externalInstallation=false, mavenInstallationHome=C:\Program Files\Maven\apache-maven-3.9.10, mavenOpts=]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 17:54:39.054
+!MESSAGE  *** 9146 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 17:56:33.536
+!MESSAGE  *** 9158 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:57:24.330
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 26784]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:57:24.346
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 26784]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 17:57:24.521
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 26784]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:57:24.522
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 14940]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 17:57:24.530
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 14940]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 17:57:24.637
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 14940]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 20:17:21.010
+!MESSAGE  *** 10635 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:18:29.204
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 23408]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:18:29.228
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 23408]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 20:18:29.421
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 23408]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:18:29.422
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 16040]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:18:29.431
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 16040]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 20:18:29.545
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 16040]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 20:23:07.466
+!MESSAGE  *** 10637 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:24:03.051
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 28072]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:24:03.073
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 28072]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 20:24:03.235
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 28072]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:24:03.237
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 25116]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:24:03.245
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 25116]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 20:24:03.381
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 25116]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 20:24:06.880
+!MESSAGE  *** 9459 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 20:24:19.683
+!MESSAGE  *** 10579 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:27:44.080
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 24636]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:27:44.104
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 24636]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 20:27:44.303
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 24636]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:27:44.304
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 9080]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:27:44.312
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 9080]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 20:27:44.424
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 9080]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 20:27:51.304
+!MESSAGE  *** 9599 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.maven 1 0 2025-08-15 20:28:02.167
+!MESSAGE  *** 10569 EmbeddedMavenRunner [configuration=MavenPreferences [isDontWarnAgainIfNoInstallationFoundChecked()=false, isGlobalMavenSupportEnabled()=true, getMavenInstallationHome()=C:\Program Files\Maven\apache-maven-3.9.10, getMavenOpts()=, getDefaultGroupId()=com.mycompany, getBaseCommandline()=mvn clean package -nsu -DskipMunitTests, isDisplayRuntimeVersionWarning()=true, isExternalInstallation()=false]]
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:28:54.039
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 22020]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:28:54.061
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 22020]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 20:28:54.205
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 22020]] indicate retry action is necessary, moving on to next one
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:28:54.205
+!MESSAGE Starting shell termination command "[taskkill, /F, /PID, 14176]"
+
+!ENTRY org.mule.tooling.runtime 1 0 2025-08-15 20:28:54.212
+!MESSAGE Finished shell termination command "[taskkill, /F, /PID, 14176]"
+
+!ENTRY org.mule.tooling.runtime 2 0 2025-08-15 20:28:54.316
+!MESSAGE Termination command ShellTerminationCommand [getTerminationCommand()=[taskkill, /F, /PID, 14176]] indicate retry action is necessary, moving on to next one

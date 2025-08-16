@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="error-xml" format="xml">
+      <types:example format="xml" element="error" location="examples/example-error.xml"/>
+    </types:type>
+    <types:type name="success-xml" format="xml">
+      <types:example format="xml" element="file" location="examples/example-2.xml"/>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#490569f1-2844-437b-a1f0-4fa9b3f7b1be"/>
+</types:mule>

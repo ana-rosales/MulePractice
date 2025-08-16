@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<http:listener-config name="cfg-http" doc:name="HTTP Listener config" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	
+	<file:config name="cfg-file" doc:name="File Config" doc:id="0dbc0bc8-55d4-4a14-a4aa-5f5aa0f85732" />
+	<flow name="flw-listfiles">
+		<http:listener doc:name="Listener" doc:id="5276b030-9808-4e11-9c29-8b5f2a212b78" config-ref="cfg-http" path="list-files"/>
+		<file:list doc:name="List" doc:id="8086254c-ad27-4ca4-bbe0-8bc7e2b0d6f6" />
+		
+	</flow>
+</mule>

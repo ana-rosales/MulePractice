@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<http:listener-config name="cfg-http" doc:name="HTTP Listener config" doc:id="0bab347e-9661-4446-8144-23c360ea01c3" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<file:config name="cfg-file" doc:name="File Config" doc:id="cec2142b-1d3c-4b58-936d-78f37bfa6a93" />
+	<flow name="confile-004Flow" doc:id="8db5c466-068c-4eae-9e07-c3d95757e374" >
+		<http:listener doc:name="Listener" doc:id="6ab7d1d8-8164-440c-86c6-21395a8796a2" path="list-files" config-ref="cfg-http"/>
+		<file:read doc:name="Read" doc:id="ad2b7013-5dde-4cab-86f1-0010d0d9c09c" path="#[attributes.queryParams.path]"/>
+		<choice doc:name="Choice" doc:id="da947424-c820-46a9-a628-6697d8b23e66" >
+			<when expression="#[payload !=]"/>
+		</choice>
+	</flow>
+</mule>
